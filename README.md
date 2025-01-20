@@ -8,7 +8,7 @@ El componente es un select que se construye dinámicamente en base al elemento s
 ### Características
 
 - **Reutilizabilidad**: El componente está diseñado para ser reutilizable.
-- **Adaptabilidad**: Al construires dinámicamente, el componente permite adaptarse a las necesidades del proyecto.
+- **Adaptabilidad**: Al construirse dinámicamente, el componente permite adaptarse a las necesidades del proyecto.
 
 ## Implementación
 1. **Copiar código HTML**

@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    position: absolute;
+    top: 50px;
+    font-size: 40px;
+}
+
+/*  */
+.order-item {
+    position: relative;
+    height: 40px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+
+    span {
+        margin-right: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .custom-select {
+        position: relative;
+
+        select {
+            display: none;
+        }
+
+        .select-selected {
+            background-color: rgb(240, 240, 240);
+        }
+
+        .select-selected:after {
+            position: absolute;
+            content: "";
+            top: 16px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #000000 transparent transparent transparent; /* arrow */
+        }
+        .select-selected.select-arrow-active:after {
+            border-color: transparent transparent #000000 transparent; /* arrow */
+            top: 9px;
+        }
+
+        .select-items div,
+        .select-selected {
+            width: 200px;
+            padding: 8px 10px;
+            border: 1px solid transparent;
+            border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent;
+            cursor: pointer;
+            color: #000000;
+            font-weight: 600;
+        }
+        .select-items {
+            position: absolute;
+            background-color: rgb(240, 240, 240);
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 99;
+        }
+        .select-hide {
+            display: none;
+        }
+        .select-items div:hover, .same-as-selected {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}

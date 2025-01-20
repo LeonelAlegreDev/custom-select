@@ -17,7 +17,7 @@ h1{
     font-size: 40px;
 }
 
-/*  */
+/* START CUSTOM SELECT */
 .order-item {
     position: relative;
     height: 40px;
@@ -85,3 +85,4 @@ h1{
         }
     }
 }
+/* END CUSTOM SELECT */
